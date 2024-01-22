@@ -1,3 +1,7 @@
-def hello(name):
+def hello(name, yell = False):
     """Greeting function"""
-    return 'Hello ' + name
+    greeting = 'Hello ' + name
+    if yell:
+        return greeting.upper()
+    else:
+        return greeting
